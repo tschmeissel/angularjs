@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="app.module.js"></script>
+<script src="data.service.js"></script>
+<script src="controller.js"></script>
+<meta charset="UTF-8">
+<title>AngularServices</title>
+</head>
+<body>
+
+<h1>AngularServices</h1>
+
+<div ng-app="app">
+	<div ng-controller="Avengers as avengers">
+		Avengers: {{avengers.avengers.length}}
+		<br>
+		Avenger 1: {{avengers.avengers[0]}}
+		<br>
+		Avenger 2: {{avengers.avengers[1]}}
+	</div>
+</div>	
