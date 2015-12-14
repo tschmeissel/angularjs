@@ -1,0 +1,21 @@
+<!doctype html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="app.module.js"></script>
+<script src="user.controller.js"></script>
+<script src="user.directive.js"></script>
+<meta charset="UTF-8">
+<title>AngularJS Directive App</title>
+</head>
+<body>
+
+<h1>AngularJS Directive App</h1>
+
+<div ng-app="directiveApp">
+	<div ng-controller="UserController as user">
+		First Name: <input type="text" ng-model="user.firstName"><br>
+		Last Name: <input type="text" ng-model="user.lastName"><br>
+		<br>
+		Address: {{user.getAddress()}}
+	</div>
+</div>
