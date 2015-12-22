@@ -3,11 +3,11 @@
 	
 	angular
 		.module('myApp')
-		.controller('UserController', UserController);
+		.controller('MainCtrl', MainCtrl);
 
-	UserController.$inject = ['$log'];
+	MainCtrl.$inject = ['$log'];
 		
-	function UserController($log) {
+	function MainCtrl($log) {
 		var vm = this; // vm = view model
 		
 		vm.firstName = 'John';
