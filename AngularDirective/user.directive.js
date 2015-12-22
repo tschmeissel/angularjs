@@ -12,6 +12,12 @@ function fullUserAddress() {
     var directive = {
         link: link,
         templateUrl: '/template/is/located/here.html',
+		// Typen ("restrict") für AngularJS Directiven
+		// E custom element
+		// A custom attribute
+		// C class
+		// 
+		// EA ist der Standard für Angular 1.3 +
         restrict: 'EA'
     };
     return directive;
