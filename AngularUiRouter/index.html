@@ -1,8 +1,8 @@
 <!doctype html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <script src="app.module.js"></script>
-<script src="app.cfg.js"></script>
 <script src="user.controller.js"></script>
 <script src="some.factory.js"></script>
 <meta charset="UTF-8">
@@ -13,10 +13,5 @@
 <h1>AngularJS ui-router App</h1>
 
 <div ng-app="myApp">
-	<div ng-controller="UserController as user">
-		First Name: <input type="text" ng-model="user.firstName"><br>
-		Last Name: <input type="text" ng-model="user.lastName"><br>
-		<br>
-		Address: {{user.getAddress()}}
-	</div>
+	<ui-view></ui-view>
 </div>
