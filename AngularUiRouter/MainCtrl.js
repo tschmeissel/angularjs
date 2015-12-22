@@ -2,7 +2,7 @@
 	'use strict';
 	
 	angular
-		.module('myApp')
+		.module('cookbookApp')
 		.controller('MainCtrl', MainCtrl);
 
 	MainCtrl.$inject = ['$log'];
