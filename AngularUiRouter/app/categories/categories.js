@@ -1,9 +1,10 @@
 (function() {
 	'use strict'
 	
-	var app = angular.module('categories', []);
+	var categories = angular.module('categories', []);
 	
-	app.config(function($stateProvider) {
+	categories.config(function($stateProvider) {
+
 		$stateProvider
 			.state('cookbook.categories', {
 				url: '/',
@@ -20,9 +21,7 @@
 			})
 	})
 	
-	app.controller('CategoriesCtrl', function CategoriesCtrl($scope) {
+	categories.controller('CategoriesCtrl', function CategoriesCtrl($scope) {
 	})
 	
-	app.controller('RecipesCtrl', function RecipesCtrl($scope) {
-	})
 })();

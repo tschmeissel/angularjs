@@ -1,7 +1,11 @@
 (function() {
 	'use strict'
 	
-	var app = angular.module('cookbookApp', ['ui.router', 'categories']);
+	var app = angular.module('cookbookApp', [
+		'ui.router',
+		'categories',
+		'categories.recipes'
+	]);
 	
 	app.config(function($logProvider) {
 		 $logProvider.debugEnabled(true);
