@@ -10,8 +10,8 @@
 				url: 'categories/:category',
 				views: {
 					'recipes@': {
-						templateUrl: 'app/categories/recipes/recipes.tmpl.html',
 						controller: 'RecipesCtrl'
+						templateUrl: 'app/categories/recipes/recipes.tmpl.html',
 					}
 				}
 			})
