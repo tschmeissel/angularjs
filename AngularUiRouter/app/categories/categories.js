@@ -8,6 +8,7 @@
 		$stateProvider
 			.state('cookbook.categories', {
 				url: '/',
+				// this state cotains these two views
 				views: {
 					'categories@': {
 						controller: 'CategoriesCtrl',
